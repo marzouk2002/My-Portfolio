@@ -1,6 +1,6 @@
 @media screen and (max-width: 1000px) {
   .nav {
-    background-color: $brk-color;
+    background-color: $drk-color;
 
     &-ham {
       width: 2.6rem;
@@ -41,7 +41,7 @@
     &-bar {
       width: 40vw;
       height: 100vh;
-      background-color: $brk-color;
+      background-color: $drk-color;
       position: fixed;
       top: 0%;
       display: flex;

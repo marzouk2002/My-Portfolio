@@ -56,7 +56,7 @@
   }
 
   // &::before {
-  //   background: linear-gradient(to right, $brk-color, rgb(0, 0, 0, 0.5));
+  //   background: linear-gradient(to right, $drk-color, rgb(0, 0, 0, 0.5));
   // }
 
   &:nth-child(2) {
@@ -68,7 +68,7 @@
       );
     }
     // &::before {
-    //   background: linear-gradient(to right, rgb(0, 0, 0, 0.5), $brk-color);
+    //   background: linear-gradient(to right, rgb(0, 0, 0, 0.5), $drk-color);
     // }
     &::after {
       background-image: url('../img/one-piece-site.png');
@@ -144,7 +144,7 @@
         padding: 1rem;
         margin: 1rem;
         background-color: $secondary-color;
-        color: $brk-color;
+        color: $drk-color;
         text-align: center;
         text-decoration: none;
         transform: scale(1);

@@ -3,7 +3,7 @@
   padding: 2rem;
   padding-top: 1rem;
   margin: -4% auto 0 auto;
-  box-shadow: $brk-color 1px 1px 10px;
+  box-shadow: $drk-color 1px 1px 10px;
   background-color: $clr-color;
   position: relative;
   display: grid;
@@ -37,7 +37,7 @@
     height: 2rem;
     width: 8rem;
     font-size: 1rem;
-    background-color: $brk-color;
+    background-color: $drk-color;
     color: $clr-color;
     border: none;
     border-radius: 100vmax;
@@ -48,7 +48,7 @@
     &:hover {
       transform: scale(1.1);
       background-color: $secondary-color;
-      color: $brk-color;
+      color: $drk-color;
     }
   }
 }
