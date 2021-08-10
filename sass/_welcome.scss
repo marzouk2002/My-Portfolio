@@ -57,10 +57,15 @@
     & a {
       color: $drk-color;
       text-decoration: none;
-      font-size: 1.2rem;
+      font-size: calc(1vw + 0.5rem);
       margin: 0 calc(2vw + 0.5rem);
-      padding: 1rem;
-      background-color: $secondary-color;
+      padding: calc(0.5vw + 0.2rem) calc(1vw + 0.5rem);
+      background-color: $clr-color;
+      transition: transform 0.3s ease-in-out;
+
+      &:hover {
+        transform: scale(1.15);
+      }
     }
   }
 
