@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+@import './config';
+@import './welcome';
+@import './about';
+@import './projects';
+@import './others';
+@import './contact';
+@import './responsive';
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: lato;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  background-color: $brk-color;
+  color: $clr-color;
+  z-index: 100;
+  justify-content: space-between;
+
+  .nav {
+    display: flex;
+    align-items: center;
+
+    .link {
+      color: $clr-color;
+      margin: 1rem;
+      padding: 0.5rem;
+      text-align: center;
+      font-size: 1.2rem;
+      text-decoration: none;
+      transition: 0.2s ease-in-out;
+      cursor: pointer;
+    }
+    .link:hover {
+      color: $secondary-color;
+    }
+  }
+}
+
+main {
+  width: 100%;
+}
+
+footer {
+  width: 100%;
+  background-color: $brk-color;
+  color: $clr-color;
+}

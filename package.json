@@ -1,0 +1,21 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "emailjs-com": "^3.2.0",
+    "gsap": "^3.7.0",
+    "jquery": "^3.6.0",
+    "parcel-bundler": "^1.12.5"
+  },
+  "scripts": {
+    "start": "rmdir dist /s /q && rmdir .cache /s /q && parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "sass": "^1.35.2"
+  }
+}

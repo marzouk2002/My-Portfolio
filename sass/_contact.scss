@@ -1,0 +1,172 @@
+.contact {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: repeat(3, auto);
+  background-color: #222;
+  grid-gap: 1px;
+
+  & > * {
+    background-color: $brk-color;
+  }
+
+  &-form {
+    padding: 2vw;
+    grid-area: 1/1/4/2;
+
+    & > form {
+      padding-right: 2rem;
+      display: grid;
+      grid-gap: 1.5rem;
+      grid-template-columns: repeat(2, 50%);
+      grid-template-rows: repeat(3, auto);
+
+      & > div {
+        padding: 0.2rem;
+        display: block;
+      }
+
+      & > div > label {
+        font-size: 1.3rem;
+        letter-spacing: 1px;
+        display: block;
+      }
+    }
+
+    input,
+    textarea {
+      font-size: 1.1rem;
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 0.3rem;
+      border: none;
+      outline: none;
+      background-color: #222;
+      color: $clr-color;
+      font-weight: 400;
+
+      &:focus {
+        box-shadow: $input-shadow;
+        background-color: #222;
+      }
+    }
+
+    .name {
+      grid-area: 1/1/1/1;
+    }
+
+    .email {
+      grid-area: 1/2/2/3;
+    }
+
+    .msg {
+      grid-area: 2/1/3/3;
+    }
+
+    .btns {
+      grid-area: 3/1/4/3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      & > input {
+        width: 30%;
+        margin: 1rem;
+        transition: 0.3s ease-in-out;
+        cursor: pointer;
+
+        &:hover {
+          box-shadow: $input-shadow;
+        }
+
+        &:first-child {
+          background-color: $secondary-color;
+        }
+      }
+    }
+  }
+
+  .sec {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
+
+    & > div {
+      display: grid;
+      width: 100%;
+      height: 60%;
+      grid-template-columns: 15% 85%;
+      grid-template-rows: repeat(2, auto);
+
+      .icon {
+        grid-area: 1/1/3/2;
+        width: 100%;
+        height: 100%;
+        font-size: 2.2rem;
+        display: grid;
+        place-items: center;
+      }
+
+      .title {
+        grid-area: 1/2/2/3;
+        display: flex;
+        align-items: center;
+        font-size: 1.5rem;
+
+        h4 {
+          position: relative;
+        }
+      }
+
+      .text {
+        grid-area: 2/2/3/3;
+        color: #ccc;
+        margin-left: 10%;
+        font-size: 1.1rem;
+        word-wrap: break-word;
+      }
+    }
+  }
+
+  .sec-phone .title h4::after {
+    content: '*Whatsapp as well';
+    white-space: nowrap;
+    font-family: sans-serif;
+    font-weight: 300;
+    font-size: 0.7rem;
+    color: #aaa;
+    margin: 0.5rem;
+    position: absolute;
+    top: 40%;
+    left: 100%;
+  }
+
+  .sec-socials {
+    padding-left: 0;
+    display: grid;
+    place-items: center;
+
+    & > div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 80%;
+
+      a {
+        color: $clr-color;
+        text-decoration: none;
+        margin: 1.2rem;
+        font-size: 2rem;
+        transform: scale(1);
+        transition: transform 0.3s ease-in-out;
+
+        &:hover {
+          transform: scale(1.4);
+        }
+      }
+    }
+  }
+}
