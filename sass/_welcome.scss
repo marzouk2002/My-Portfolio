@@ -49,9 +49,13 @@
     font-size: calc(1vw + 1rem);
   }
 
+  h3 {
+    font-size: calc(0.8vw + 0.8rem);
+  }
+
   .links {
     display: flex;
-    margin-top: 1rem;
+    margin-top: 2rem;
     align-content: space-between;
     justify-content: center;
 
@@ -60,9 +64,8 @@
       font-weight: 400;
       letter-spacing: 1px;
       position: relative;
-      font-size: calc(0.7vmax + 0.5rem);
+      font-size: calc(0.8vmax + 0.5rem);
       margin: 0 calc(1.5vmax + 0.5rem);
-      padding: calc(0.3vmax + 0.2rem) calc(0.6vmax + 0.5rem);
       transition: letter-spacing 0.3s ease-in-out, color 0.3s ease-in-out;
 
       &:hover {
