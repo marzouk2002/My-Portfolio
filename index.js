@@ -18,12 +18,21 @@ if(is_touch_enabled()) {
     $(".projects-cont").addClass('is-touch')
 }
 
+// // animate title
+// setTimeout(() => {
+//     $('#main-title').slideToggle(10000)
+//     $('#main-title').slideToggle(500)
+// }, 2000)
+
+// hamburger
 $('.nav-ham').click(function() {
     $('.nav-ham > div').toggleClass("open")
     $('.nav-bar').toggleClass('show')
 })
 $('.par2').slideUp(0)
 
+
+// read more section
 $('#more-btn').click(function() {
     $('.par2').slideToggle(500)
     if($('#more-btn').text() === "Read More") {

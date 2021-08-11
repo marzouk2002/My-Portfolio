@@ -42,7 +42,12 @@
 
   h1 {
     font-size: calc(8vw + 2rem);
-    white-space: pre-line;
+
+    // white-space: pre-line;
+
+    &::after {
+      content: '';
+    }
   }
 
   h2 {
