@@ -19,55 +19,55 @@ $input-shadow: 1px 1px 2px $secondary-color, -1px -1px 2px $secondary-color,
 @keyframes beforeanim {
   0% {
     transform: scaleY(1) translate(-50%);
-    content: 'AAA';
+    content: 'Developer';
   }
 
   25% {
     transform-origin: top;
     transform: scaleY(1) translate(-50%);
-    content: 'AAA';
+    content: 'Developer';
   }
 
   30% {
     transform-origin: top;
     transform: scaleY(0) translate(-50%);
-    content: 'AAA';
+    content: 'Developer';
   }
 
   50% {
     transform-origin: bottom;
     transform: scaleY(0) translate(-50%);
-    content: 'CCC';
+    content: 'Back End';
   }
 
   55% {
     transform-origin: bottom;
     transform: scaleY(1) translate(-50%);
-    content: 'CCC';
+    content: 'Back End';
   }
 
   75% {
     transform-origin: top;
     transform: scaleY(1) translate(-50%);
-    content: 'CCC';
+    content: 'Back End';
   }
 
   80% {
     transform-origin: top;
     transform: scaleY(0) translate(-50%);
-    content: 'CCC';
+    content: 'Back End';
   }
 
   95% {
     transform-origin: bottom;
     transform: scaleY(0) translate(-50%);
-    content: 'AAA';
+    content: 'Developer';
   }
 
   100% {
     transform-origin: bottom;
     transform: scaleY(1) translate(-50%);
-    content: 'AAA';
+    content: 'Developer';
   }
 }
 
@@ -80,48 +80,48 @@ $input-shadow: 1px 1px 2px $secondary-color, -1px -1px 2px $secondary-color,
   25% {
     transform-origin: bottom;
     transform: scaleY(0) translate(-50%);
-    content: 'BBB';
+    content: 'Front End';
   }
 
   30% {
     transform-origin: bottom;
     transform: scaleY(1) translate(-50%);
-    content: 'BBB';
+    content: 'Front End';
   }
 
   50% {
     transform-origin: top;
     transform: scaleY(1) translate(-50%);
-    content: 'BBB';
+    content: 'Front End';
   }
 
   55% {
     transform-origin: top;
     transform: scaleY(0) translate(-50%);
-    content: 'BBB';
+    content: 'Front End';
   }
 
   75% {
     transform-origin: bottom;
     transform: scaleY(0) translate(-50%);
-    content: 'DDD';
+    content: 'MERN Stack';
   }
 
   80% {
     transform-origin: bottom;
     transform: scaleY(1) translate(-50%);
-    content: 'DDD';
+    content: 'MERN Stack';
   }
 
   95% {
     transform-origin: top;
     transform: scaleY(1) translate(-50%);
-    content: 'DDD';
+    content: 'MERN Stack';
   }
 
   100% {
     transform-origin: top;
     transform: scaleY(0) translate(-50%);
-    content: 'DDD';
+    content: 'MERN Stack';
   }
 }
