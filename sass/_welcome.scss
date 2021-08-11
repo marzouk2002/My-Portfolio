@@ -52,13 +52,12 @@
       position: absolute;
       top: 0;
       left: 50%;
-      transform: translate(-50%);
       color: $clr-color;
     }
 
     &::after {
       animation: afteranim 12s infinite;
-      transform: scaleY(0);
+      transform: scaleY(0) translate(-50%);
     }
 
     &::before {
