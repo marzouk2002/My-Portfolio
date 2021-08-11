@@ -57,14 +57,43 @@
     & a {
       color: $drk-color;
       text-decoration: none;
-      font-size: calc(1vw + 0.5rem);
-      margin: 0 calc(2vw + 0.5rem);
-      padding: calc(0.5vw + 0.2rem) calc(1vw + 0.5rem);
-      background-color: $clr-color;
-      transition: transform 0.3s ease-in-out;
+      position: relative;
+      font-size: calc(0.7vmax + 0.5rem);
+      margin: 0 calc(1.5vmax + 0.5rem);
+      padding: calc(0.3vmax + 0.2rem) calc(0.6vmax + 0.5rem);
+      transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+      border-radius: 5px;
+
+      &::after,
+      &::before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: $secondary-color;
+        z-index: -1;
+        border-radius: 5px;
+      }
+
+      &::before {
+        background-color: $clr-color;
+      }
+
+      &::after {
+        transform-origin: bottom;
+        transform: scaleY(0);
+        transition: transform ease-in-out 0.3s;
+      }
 
       &:hover {
         transform: scale(1.15);
+        color: $clr-color;
+
+        &::after {
+          transform: scaleY(1);
+        }
       }
     }
   }
