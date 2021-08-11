@@ -15,3 +15,58 @@ $input-shadow: 1px 1px 2px $secondary-color, -1px -1px 2px $secondary-color,
     opacity: 1;
   }
 }
+
+@keyframes beforeanim {
+  0% {
+    transform: scaleY(1) translate(-50%);
+    content: 'AAA';
+  }
+
+  25% {
+    transform-origin: top;
+    transform: scaleY(1) translate(-50%);
+    content: 'AAA';
+  }
+
+  30% {
+    transform-origin: top;
+    transform: scaleY(0) translate(-50%);
+    content: 'AAA';
+  }
+
+  50% {
+    transform-origin: bottom;
+    transform: scaleY(0) translate(-50%);
+    content: 'CCC';
+  }
+
+  55% {
+    transform-origin: bottom;
+    transform: scaleY(1) translate(-50%);
+    content: 'CCC';
+  }
+
+  75% {
+    transform-origin: top;
+    transform: scaleY(1) translate(-50%);
+    content: 'CCC';
+  }
+
+  80% {
+    transform-origin: top;
+    transform: scaleY(0) translate(-50%);
+    content: 'CCC';
+  }
+
+  95% {
+    transform-origin: bottom;
+    transform: scaleY(0) translate(-50%);
+    content: 'AAA';
+  }
+
+  100% {
+    transform-origin: bottom;
+    transform: scaleY(1) translate(-50%);
+    content: 'AAA';
+  }
+}
