@@ -42,11 +42,29 @@
 
   h1 {
     font-size: calc(8vw + 2rem);
+    white-space: pre-line;
+    color: transparent;
+    position: relative;
 
-    // white-space: pre-line;
+    &::after,
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%);
+      color: $clr-color;
+    }
 
     &::after {
-      content: '';
+      animation: afteranim 10s infinite;
+      transform: scaleY(0);
+    }
+
+    &::before {
+      animation: beforeanim 10s infinite;
+      transform: scaleY(1);
+      content: 'AAA';
     }
   }
 
