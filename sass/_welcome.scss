@@ -41,9 +41,9 @@
   }
 
   h1 {
-    font-size: calc(8vw + 2rem);
-    white-space: pre-line;
+    font-size: calc(7vw + 1.8rem);
     color: transparent;
+    white-space: nowrap;
     position: relative;
 
     &::after,
@@ -57,13 +57,13 @@
     }
 
     &::after {
-      animation: afteranim 10s infinite;
+      animation: afteranim 12s infinite;
       transform: scaleY(0);
     }
 
     &::before {
-      animation: beforeanim 10s infinite;
-      transform: scaleY(1);
+      animation: beforeanim 12s infinite;
+      transform: scaleY(1) translate(-50%);
       content: 'Developer';
     }
   }
