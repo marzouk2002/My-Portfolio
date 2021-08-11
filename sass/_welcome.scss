@@ -37,11 +37,12 @@
   .content {
     animation: slideup 1s 300ms forwards ease-in-out;
     opacity: 0;
+    max-width: 80%;
   }
 
   h1 {
     font-size: calc(8vw + 2rem);
-    $clr-color-space: pre-line;
+    white-space: pre-line;
   }
 
   h2 {
@@ -50,50 +51,46 @@
 
   .links {
     display: flex;
-    margin-top: 1.5rem;
+    margin-top: 1rem;
     align-content: space-between;
     justify-content: center;
 
     & a {
-      color: $drk-color;
-      text-decoration: none;
+      color: $clr-color;
+      font-weight: 400;
+      letter-spacing: 1px;
       position: relative;
       font-size: calc(0.7vmax + 0.5rem);
       margin: 0 calc(1.5vmax + 0.5rem);
       padding: calc(0.3vmax + 0.2rem) calc(0.6vmax + 0.5rem);
-      transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
-      border-radius: 5px;
+      transition: letter-spacing 0.3s ease-in-out, color 0.3s ease-in-out;
 
-      &::after,
-      &::before {
-        content: '';
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background-color: $secondary-color;
-        z-index: -1;
-        border-radius: 5px;
-      }
+      // &::after,
+      // &::before {
+      //   content: '';
+      //   width: 100%;
+      //   height: 100%;
+      //   position: absolute;
+      //   top: 0;
+      //   left: 0;
+      //   background-color: $secondary-color;
+      //   z-index: -1;
+      //   border-radius: 2px;
+      // }
 
-      &::before {
-        background-color: $clr-color;
-      }
+      // &::before {
+      //   background-color: $clr-color;
+      // }
 
-      &::after {
-        transform-origin: bottom;
-        transform: scaleY(0);
-        transition: transform ease-in-out 0.3s;
-      }
+      // &::after {
+      //   transform-origin: bottom;
+      //   transform: scaleY(0);
+      //   transition: transform ease-in-out 0.3s;
+      // }
 
       &:hover {
-        transform: scale(1.15);
-        color: $clr-color;
-
-        &::after {
-          transform: scaleY(1);
-        }
+        letter-spacing: 3px;
+        color: $secondary-color;
       }
     }
   }
