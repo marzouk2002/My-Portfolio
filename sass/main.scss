@@ -45,14 +45,15 @@ header {
 }
 
 .nav {
+  width: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
   font-family: 'Source Sans Pro';
 
-  &-bar {
-    width: 75%;
-    margin: auto;
-  }
+  // &-bar {
+  //   width: 75%;
+  // }
 
   .link {
     color: $clr-color;

@@ -1,6 +1,7 @@
 @media screen and (max-width: 1000px) {
   header .nav {
     background-color: $drk-color;
+    width: auto;
 
     &-ham {
       width: 2.3rem;
