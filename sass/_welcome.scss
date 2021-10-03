@@ -77,9 +77,10 @@
 
   .links {
     display: flex;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     align-content: space-between;
     justify-content: center;
+    flex-direction: column;
 
     & a {
       color: $clr-color;
@@ -87,7 +88,7 @@
       letter-spacing: 1px;
       position: relative;
       font-size: calc(0.8vmax + 0.5rem);
-      margin: 0 calc(1.5vmax + 0.5rem);
+      margin: calc(0.4vmax + 0.2rem) calc(1.5vmax + 0.5rem);
       transition: letter-spacing 0.3s ease-in-out, color 0.3s ease-in-out;
 
       &:hover {
