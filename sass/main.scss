@@ -36,6 +36,8 @@ header {
   .nav {
     display: flex;
     align-items: center;
+    flex: 0 0 calc(75% + 2rem);
+    margin: auto;
 
     .link {
       color: $clr-color;
