@@ -51,9 +51,9 @@ header {
   justify-content: center;
   font-family: 'Source Sans Pro';
 
-  // &-bar {
-  //   width: 75%;
-  // }
+  &-bar {
+    width: calc(2rem + 78%);
+  }
 
   .link {
     color: $clr-color;
