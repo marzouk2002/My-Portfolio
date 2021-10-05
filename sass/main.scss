@@ -53,22 +53,52 @@ header {
 
   &-bar {
     width: calc(2rem + 78%);
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
   }
 
   .link {
     color: $clr-color;
-    margin: 1rem;
-    padding: 0.5rem;
+    margin: 0 1rem;
+    padding: 0.2rem 0.5rem;
     text-align: center;
-    font-size: 0.95rem;
+    font-size: 1rem;
+    font-weight: 400;
     text-decoration: none;
-    transition: 0.2s ease-in-out;
+    transition: 0.25s ease-in-out;
     cursor: pointer;
-  }
-  .link:hover {
-    color: $secondary-color;
+
+    &:hover {
+      color: $secondary-color;
+    }
+
+    &:last-child {
+      margin-right: 0;
+      padding-right: 0;
+    }
   }
 }
+
+.link.logo {
+  margin: 0;
+  padding: 0;
+  margin-right: auto;
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+
+  &::first-letter {
+    color: $secondary-color;
+  }
+
+  &:hover {
+    letter-spacing: 3px;
+    color: $clr-color;
+  }
+}
+
 main {
   width: 100%;
 }
