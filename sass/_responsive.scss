@@ -58,14 +58,14 @@
     }
 
     &-bar > .link {
-      margin: 8% 0;
-      font-size: 5vmin;
+      margin: 10% 0;
+      font-size: 4vmin;
       transition: 0.2s ease-in-out;
       transform-origin: center;
       display: inline;
 
       &:hover {
-        transform: scale(1.2);
+        transform: scale(1.1);
       }
     }
     div.open {
